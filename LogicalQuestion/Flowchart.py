@@ -404,48 +404,11 @@ b = int(input("Enter the Number B:- "))
 c = int(input("Enter the Number C:- "))
 d = int(input("Enter the Number D:- "))
 
+numbers = [a, b, c, d]
 
-if a > b:
-    max = a
-    second_max = b
-else:
-    max = b
-    second_max = a
-if max > c:
-    if second_max > c:
-        max = second_max
-        second_max = max
-        third_max = c
-    else:
-        max = c
-        second_max = second_max
-        third_max = max
-else:
-    max = max 
-    second_max = c
-    third_max = second_max
-if max > d:
-    if second_max > d:
-        if third_max > d:
-            max = third_max
-            second_max = d
-            third_max = second_max
-        else:
-            max = d
-            second_max = third_max
-            third_max = max
-    else:
-        max = second_max
-        second_max = d
-        third_max = max
-else:
-    max = max
-    second_max = d
-    third_max = second_max
- 
+third_max = numbers[2]  # 2 is indexing.
 
-print(third_max)
-
+print("The third maximum number is:", third_max)
 
 
 # Loop 

@@ -679,21 +679,28 @@ else:
 # Example 4. Even odd sum print ?
 
 
-Frist_Number = int (input("Enter the Frist Number :- "))
-Last_Number = int (input("Enter the Last Number :- "))
-Even_Sum = 0
-Odd_sum = 0
+# Frist_Number = int (input("Enter the Frist Number :- "))
+# Last_Number = int (input("Enter the Last Number :- "))
+# Even_Sum = 0
+# Odd_sum = 0
 
-while Frist_Number <= Last_Number:
-    if Frist_Number % 2 == 0:
-        print("Even Number :- ",Frist_Number)
-        Even_Sum = Even_Sum + Frist_Number
-    else:
-        print("Odd Number :- ",Frist_Number)
-        Odd_sum = Odd_sum + Frist_Number
-    Frist_Number = Frist_Number + 1
+# while Frist_Number <= Last_Number:
+#     if Frist_Number % 2 == 0:
+#         print("Even Number :- ",Frist_Number)
+#         Even_Sum = Even_Sum + Frist_Number
+#     else:
+#         print("Odd Number :- ",Frist_Number)
+#         Odd_sum = Odd_sum + Frist_Number
+#     Frist_Number = Frist_Number + 1
 
-print("Even Number Sum :- ", Even_Sum)
-print("Odd Number sum :- ", Odd_sum)
+# print("Even Number Sum :- ", Even_Sum)
+# print("Odd Number sum :- ", Odd_sum)
+
+
+
+
+# Break Stetement 
+
+
 
 
