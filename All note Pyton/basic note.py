@@ -636,6 +636,97 @@ else:
 #     print("Not Eligible for Exam")
 
 
+# Loop in Python  
+
+# what is Loop ? 
+
+(English)
+#A loop in Python is a control flow statement that allows you to repeat a block of code multiple times.
+#There are two main types of loops in Python:
+
+(Hindi)
+# Python mein loop ek control flow statement hai jo aapko ek block of code ko baar-baar chalane ki suvidha
+# deta hai. Do main types ke loops hote hain:
+
+# for loop:
+
+(English) 
+# Used to iterate over a sequence (like a list, tuple, or string).
+
+(Hindi)
+# Yeh sequence (jaise list, tuple, ya string) ke har element par iterate karta hai.
+
+# while loop: 
+
+(English)
+# Repeats as long as a certain condition is true.
+
+(Hindi)
+# ab tak ek condition true rahti hai tab tak repeat karta hai.
+
+
+# for loop 
+
+# it`s use for itreble object 
+ 
+# Ex. 1
+
+# for x in range(3):
+# for x in range(10 , 20):  # app diside kr skte ho kaha se start karna h kaha se end karna h ! 
+for x in range(10 , 20 , 2):  #  11 , 13 , 15 , 17 , 19
+
+    # print("Vishal Deshmukh")
+    # print("Muskan Deshmukh")
+    # print(100, x)
+    print(100, x + 1)
+
+# Ex. 2
+ 
+# Print even and odd number using for loop ?
+
+for number in range(1 , 101):
+    if number % 2 == 0 :
+        print("Even Number :- ",number)
+    else:
+        print("Odd Number :- ",number)
+
+# EX. 3
+
+# any number math table 
+
+for number in range(1, 11):
+    print(f"2 x {number} = {number * 2}")
+    # print(f"3 x {number} = {number * 3}")
+    # print(f"4 x {number} = {number * 4}")
+    # print(f"5 x {number} = {number * 5}")
+    # print(f"6 x {number} = {number * 6}")
+    # print(f"7 x {number} = {number * 7}")
+    # print(f"8 x {number} = {number * 8}")
+    # print(f"9 x {number} = {number * 9}")
+    # print(f"10 x {number} = {number * 10}")
+    
+
+# string  also itreble object
+
+# Ex. 1
+
+# name = "Vishal Deshmukh"
+name = "Muskan Deshmukh"
+
+for cha in name :  # This loop print one by one charector !
+    print(cha)
+
+
+# List Example in for loop ?
+
+cart = ["Apple","Mango","Orange"]
+# cart = ["Apple :- 10rs ", "Mango :- 20rs", "Orange :- 30rs","Total = 60rs"]
+
+for item in cart :
+    print(item)
+
+
+
 
 # While loop in python
 
@@ -697,10 +788,274 @@ else:
 # print("Odd Number sum :- ", Odd_sum)
 
 
+# Write a all even Number till N
+
+# N = int(input("Enter the N :- "))
+# i = 1
+
+# while i <= N:
+#     if i % 2 == 0:
+#         print(i)
+        
+#     i = i + 1
+
+# Write a all odd Number till N
+
+
+# N = int(input("Enter the N :- "))
+# i = 1
+
+# while i <= N :
+#     if i % 2 != 0:
+#         print(i)
+#     i = i + 1         
 
 
 # Break Stetement 
 
+# in for loop
+
+for x in range(10):
+    # if x == 5:
+    # if x == 6:
+    if x == 1:
+        break      # This is a breck stetament is means stop loop !
+    print(x)
 
 
+# In while loop
+
+x = 1
+
+while x <= 10:
+    if x == 5:
+        break
+    print(x)
+    x = x + 1
+
+
+
+# continue in python
+
+
+# in for loop
+
+
+for x in range(10):
+    if x == 3 or x == 9:   # or is a logical operator its use any one condition True is this condition True
+        continue           # This use skip that number and start next number.
+    print(x)
+
+
+# In while loop
+
+
+x = 0
+
+while x < 10 :
+    x = x + 1                # x value add 1 
+    # if x == 2 or x == 5:
+    # if x == 1 or x == 2:
+    if x == 3 or x == 9:
+        continue
+    print(x)
+    
+
+
+
+
+# Using Else stetement with for loop and while loop ! 
+
+
+# 1. Else stetament using for loop.
+
+# Simple Game user input even number to loss user and input odd number user win ( Only Three chance )!
+
+
+# for number in range(3):
+#     num = int(input("Enter the odd Number :- "))
+
+#     if num % 2 == 0 :
+#         print("You loss!")
+#         break
+# else:
+#     print("You win!")
+
+# 2. Else stetament using while loop.
+
+
+# x = int(input("Enter the Even Number :- "))
+
+# while x <= 1000000000000000000000000000000000000000000000000000000000:   # Unlimited
+#     if x % 2 == 0:
+#         print("You Win !")
+#         break
+#     else:
+#         print("You Loss !")
+#         break
+
+
+
+
+# Nested Loop 
+
+
+# In for loop
+
+
+# Ex.1
+
+
+# for num1 in range(10):
+#     for num2 in range(5):
+#         print(f"{num1}, {num2}")
+#     # print("---------------------")
+
+
+# Ex. 2 :- Math Table.. 1 to 10 
+
+
+for x in range(2,11):
+    print(f"Table of {x}")
+    for y in range(1, 11):
+        print(f"{x} X {y} = {x * y}")
+    print("-----------------")
+
+
+
+
+
+# imp   ( end="")   ye apka output ko line me layega 
+
+
+# Ex. 3 :- Pattern Question 
+
+for x in range(1, 6):            # starting and ending Number 
+    for y in range(1, x + 1):    # 
+        print("*", end=" ")
+    print("\n")                   # This tag Automatic line change  
+
+    
+# Ex. 4
+
+# for x in range(1, 11):
+#     print(f"{2} x {x} = {x * table}")
+# In while loop 
+
+
+# Ex. 1
+
+
+# line = 1
+
+# while line <= 5:
+#     star = 1
+#     while star <= line :
+#         print("*", end=" ")
+#         star = star + 1
+#     print("\n")
+#     line = line + 1
+
+
+
+
+
+
+# number = int(input("Enter number or table :- "))
+
+# x = 1 
+
+# while x <= 10:
+#     table = x * number
+#     print(table)
+#     x = x + 1
+
+
+#   Print a single number table ? 
+
+# table = int(input("Enter number or table :- "))
+
+# for x in range(1, 11):
+#     print(f"{2} x {x} = {x * table}")
+    
+
+
+
+# Function 
+
+# Ex. 1
+
+def gm_gn():                     
+    print("Good Morning")
+    print("Good Night")
+
+print("Function Create")
+
+gm_gn()  #  Function Use
+
+# Ex. 2 
+
+def vishal():
+    print("Hay I am Vishal Deshmukh")
+    print("My Age is 18 ")
+    print("I am from Maharastra")
+
+vishal()     # Use a function 
+# vishal()
+# vishal()
+# vishal()   any time use 
+
+# Ex. 3
+
+# def table():
+#     which_table = int(input("Enter a which table Number :- "))
+#     for x in range(1, 11):
+#         print(f"{2} x {x} = {x * which_table}")
+
+
+# table()
+
+# Ex. 4
+
+# def table1_to_10():
+#     for x in range(2,11):
+#         print(f"Table of {x}")
+#     for y in range(1, 11):
+#         print(f"{x} X {y} = {x * y}")
+#     print("-----------------")
+
+
+# table1_to_10()
+
+
+# Ex. 5
+
+# def pattern():
+#     for x in range(1,6):    
+#         for y in range(1, x + 1):
+#             print("*", end=" ")
+#         print("\n")
+
+
+# pattern()
+
+# Ex.6
+
+# Even odd number print with function
+
+
+# def Even_Odd():
+#     number = int(input("Enter the last Number :- "))
+
+#     x = 1
+
+#     while x <= number:
+#         if x % 2 == 0:
+#             print("Even Number :- ", x) 
+#         else:
+#             print("Odd Number :- ", x)
+#         x = x + 1
+    
+
+# Even_Odd()
 
