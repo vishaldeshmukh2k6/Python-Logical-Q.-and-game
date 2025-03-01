@@ -56,4 +56,3 @@
 
 # Example 5. print prime number ?
 
-

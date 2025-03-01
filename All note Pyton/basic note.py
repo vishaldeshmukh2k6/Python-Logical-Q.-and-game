@@ -1131,3 +1131,86 @@ Full_Name("Vishal", secondname = "Santosh", lastname = "Deshmukh"  )
 
 
 
+# def print_add(num1,num2):   # Isne kuch return nhi kiya!
+#     # sum = num1 + num2
+#     # print(sum)
+#     # MUL = num1 * num2
+#     div = num1 / num2
+#     print(div)
+# print_add(12,20)
+# # w = print_add(12,20)
+# # print(w)   # None
+
+
+
+
+# Ex. 1
+
+# def return_add(num1, num2):
+#     result = num1 + num2
+#     return result
+
+# # print(return_add(10,11))
+# s = return_add(10,11)
+# print(s)
+
+
+# Ex. 2
+
+def return_notlimit(num1, num2):
+    result1 = num1 * 2
+    result2 = num2 * 2 
+    result3 = num1 * num2
+    result4 = num1 * 10
+    return result1, result2, result3, result4 
+    # return result1 + result2 + result3 + result4 
+
+total1, total2, total3, total4 = return_notlimit(2,5)
+# print(f"result1 = {total1}, result2 = {total2}, result3 = {total3}, result4 = {total4}")
+print(f"Result1 :- {total1}")
+print(f"Result2 :- {total2}")
+print(f"Result3 :- {total3}")
+print(f"Result4 :- {total4}")
+
+# print(return_notlimit(2,5))
+
+
+
+
+# *args in Python 
+
+
+# Ex. 1
+
+def tata(*num):
+    sum = 0
+    for n in num:
+        sum = sum + n
+    print(sum)
+
+tata(1,2,3,4,5,6,7,8,9,10)
+
+
+# Ex. 2
+
+def even(*even):
+    for n in even:
+        if n % 2 == 0:
+            print(f"Even Number :- {n}")
+        else:
+            print(f"Odd Number :- {n}")
+
+even(1,2,3,4,5,6,7,8,9,10)
+
+
+# def odd(*odd):
+#     for x in odd:
+#         if x % 2 != 0:
+#             print(f"Odd Number :- {x}")
+
+# odd(1,2,3,4,5,6,7,8,9,10)
+
+
+# Ex. 3
+
+
