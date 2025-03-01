@@ -399,16 +399,16 @@ else:
 
 # 20.  Write a program to take 4 numbers from the user and output the third max of these 4 numbers.
 
-a = int(input("Enter the Number A:- "))
-b = int(input("Enter the Number B:- "))
-c = int(input("Enter the Number C:- "))
-d = int(input("Enter the Number D:- "))
+# a = int(input("Enter the Number A:- "))
+# b = int(input("Enter the Number B:- "))
+# c = int(input("Enter the Number C:- "))
+# d = int(input("Enter the Number D:- "))
 
-numbers = [a, b, c, d]
+# numbers = [a, b, c, d]
 
-third_max = numbers[2]  # 2 is indexing.
+# third_max = numbers[2]  # 2 is indexing.
 
-print("The third maximum number is:", third_max)
+# print("The third maximum number is:", third_max)
 
 
 # Loop 
@@ -416,4 +416,185 @@ print("The third maximum number is:", third_max)
 # 23. Take the number N and the name from the user as inputs, and print the name N times.
 
 
+# name = str(input("Enter a Name :- "))
+# How_Many_Time_Print_Name = int(input("How Many Time print Name :- "))
+
+# x = 1
+
+# while x <= How_Many_Time_Print_Name:
+#     print(name)
+#     x = x + 1
+
+
+# 24. Take a number N from the user as input, and print even numbers up to N.
+
+
+# Using while loop
+
+
+# last_number = int(input("Enter the last Number :- "))
+
+# x = 1
+
+# while x <= last_number:
+#     if x % 2 == 0:
+#         print(x)
+#     x = x + 1
+
+
+# Using for loop 
+
+
+# last_number = int(input("Enter the last Number :- "))
+
+
+# for x in range(last_number):
+#     x = x + 1
+#     if x % 2 == 0:
+#         print(x)
+
+
+
+# 25. Write a program to print the sum of odd numbers up to N.
+
+
+# using while loop
+
+# N = int(input("Enter the N Number :- "))
+# x = 1 
+# sum = 0
+
+# while x <= N :
+#     if x % 2 != 0:
+#         sum = sum + x
+#     x = x + 1
+# print(sum)
+
+
+# using for loop 
+
+
+# N = int(input("Enter the last number N :- "))    # Enter not same digit in for loop 100 hai to 101 dalo fir same ans ayega.
+
+# x = 1
+# sum = 0
+
+# for x in range(N):
+#     if x % 2 != 0 :
+#         sum = sum + x
+# print(sum)
+
+
+
+# 26. Write a program to take two integers M, and N and print the sum of numbers in the range M to N.
+
+# M = int(input("Enter the M Number :- "))
+# N = int(input("Enter the N Number ;- "))    
+# sum = 0
+
+# using while loop
+
+# while M <= N:
+#     sum = sum + M
+#     M = M + 1
+# print(sum)
+
+
+
+# using for  loop 
+
+# for x in range(M, N):
+#     sum = sum + x 
+# print(sum + N)
+
+
+
+
+
+# 27. Write a program to calculate the sum of the following series where N is input from the user.
+# 1 + 1/2 + 1/3 + 1/4 + 1/5 +…………1/N
+
+
+# N = int(input('Enter the N :- '))
+
+# sum = 0
+
+# using while loop 
+
+# x = 1
+
+# while x <= N:
+#     add = 1/x
+#     sum = sum + add
+#     x = x + 1
+# print(sum)
+
+
+# Using for loop 
+
+
+# for x in range(1,N):
+#     add = 1 / x
+#     sum = sum + add
+
+# print((sum + 1/N))
+    
+
+# 28. Write a program to take a number from the user and print the number of digits in the given number.
+
+
+# Number = int(input("Enter any digit of Number :- "))
+
+# count = 0
+
+# using while loop 
+
+# while Number % 10:
+#     count = count + 1
+#     Number = Number // 10
+
+# print(count)
+
+
+# using for loop
+
+# for x in range(Number):
+#     if Number % 10:
+#         count = count + 1
+#         Number = Number // 10
+
+# print(count)
+
+
+# 29. Write a program to take a number from the user and print the sum of the digits of the given number.
+
+
+# Number = int(input("Enter any digit of Number :- "))
+
+# sum = 0
+
+# using for loop 
+
+# for x in range(Number):
+#     single_n = Number % 10
+#     sum = sum + single_n
+#     Number = Number // 10
+
+# print(sum)
+
+
+
+
+# 30. 	Write a program to check if a number is a special type of number called a 'prime number'.
+#  A prime number is a number that is only divisible by 1 and itself, and it doesn't have any other factors.
+
+
+
+
+
+
+
+
+# 31. 	Write a program to take a number from the user and then determine if that number is a special type 
+#       of number called a 'perfect number'
 

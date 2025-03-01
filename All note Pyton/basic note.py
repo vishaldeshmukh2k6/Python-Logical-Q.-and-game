@@ -1059,3 +1059,75 @@ vishal()     # Use a function
 
 # Even_Odd()
 
+
+
+# Argument and parameter
+
+# Ex. 1
+
+def hi_Hello(name):        # This Name is parameter     
+    print(f"Hi {name}")
+    print("Hello")
+
+
+hi_Hello("Vishal")        # This vishal is Argument.
+
+
+# Ex.2
+
+def Full_From(address):
+    print(f"Hay I am From {address}")   # This "address" is a parameter.
+    print("Thank You !")
+
+Full_From("Lobhi Village In Maharastra")   # This "Lobhi Village In Maharastra" is a Argument.  
+Full_From("Fathepur in Himachal")          # This "Fathepur in Himach   al" is a Argument.
+
+
+# Ex. 3
+
+
+def middel_name(MN , LS ="Deshmukh"):
+    print(f"Hay I am a Vishal {MN} {LS}")
+    print("My Dad is Farmer ")
+
+middel_name("Santosh")
+  
+
+# Ex. 4
+
+def table(num):
+    for x in range(1,11):
+        print(f"{num} x {x} = {x * num}")
+
+
+# table(3)
+# table(4)
+# table(11)
+table(9)
+
+
+# Keyword Argument
+
+
+def middel_n(MN , LS):
+    print(f"Hay I am a Vishal {MN} {LS}")
+    print("My Dad is Farmer ")
+
+# middel_n(LS = "Deshmukh", MN = "Santosh")
+middel_n("Santosh", LS= "Deshmukh")   # ap frist Name Hata skte ho but last ya midel name nhi 
+  
+
+
+def Full_Name(fristname, secondname , lastname ):
+    print(f"Hay I am a {fristname} my father name is {secondname} and my surname is {lastname}")
+
+
+Full_Name("Vishal", secondname = "Santosh", lastname = "Deshmukh"  )
+
+
+
+# Return in Function 
+
+
+
+
